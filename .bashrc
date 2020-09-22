@@ -134,7 +134,7 @@ fi
 # Custom bind
 bind '"\e[20;2~":"clear ; pwd\n"'
 bind '"\e[23;2~":"sudo -i"'
-bind '"\e[24;2~":"up\n"'
+bind '"\e[24;2~":"update\n"'
 
 # Custom alias
 alias up='sudo apt autoclean ; sudo apt clean ; sudo apt update && sudo apt -y full-upgrade ; sudo apt -y autoremove ; sudo apt install -f'
