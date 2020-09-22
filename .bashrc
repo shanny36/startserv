@@ -139,17 +139,3 @@ bind '"\e[24;2~":"up\n"'
 # Custom alias
 alias up='sudo apt autoclean ; sudo apt clean ; sudo apt update && sudo apt -y full-upgrade ; sudo apt -y autoremove ; sudo apt install -f'
 alias up2='up && up'
-
-alias www='cd /var/www/'
-alias ng='cd /etc/nginx'
-alias site='cd /etc/nginx/conf.d/'
-alias si='cd /etc/nginx/sites-available/'
-
-alias chwww='chown -R www-data:www-data /var/www/*'
-
-alias reng='nginx -t && service nginx restart && service nginx status'
-alias rephp='service php7.*-fpm restart ; service php7.*-fpm status'
-alias retor='service tor restart ; service tor status'
-alias ref='rephp && reng'
-alias reft='rephp && reng && retor'
-alias wgs='bash /etc/wireguard/wireguard-server.sh'
